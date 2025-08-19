@@ -82,6 +82,8 @@ OrgPulse is a CLI tool to fetch GitHub organization repos, analyze metrics, and 
 
 ## ✍️ Pagination / Checkpoint Flow
 
+![image alt](https://github.com/rucha-code-nodes/OrgPulseTask/blob/36a7f53670eb174c5a680f820ac6aa25190d57d8/Control_Flow.png)
+
 
 
 
