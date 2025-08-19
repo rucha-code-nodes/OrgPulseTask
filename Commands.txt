@@ -1,0 +1,50 @@
+
+
+###  **Intro**
+
+"Welcome, in this demo I’ll show you how OrgPulse works step by step."
+
+---
+
+### **1️ Initialize indexes**
+
+node ./bin/orgpulse init 
+node ./bin/orgpulse fetch rucha-code-nodes  
+
+→ Sets up the initial index for OrgPulse.
+→ Fetches repository data for my GitHub org.
+
+---
+
+### **3️ Show top repos by stars**
+
+node ./bin/orgpulse top --org rucha-code-nodes --metric stars --limit 5 
+node ./bin/orgpulse export --org rucha-code-nodes --out repos.csv 
+→
+ Displays the top 5 repos by stars.
+→ Exports repository data into a CSV file.
+
+---
+
+### **5️ Sync stars & forks later**
+
+node ./bin/orgpulse sync-stars --org rucha-code-nodes   → Updates star and fork counts to stay current.
+
+---
+
+### **6️ Test MongoDB insert (optional)**
+
+node ./bin/orgpulse testdb   → Verifies database connection and inserts sample data.
+
+---
+
+### **7️Run tests**
+
+npm test  → Runs automated test cases to validate the tool.
+
+---
+
+### **Outro**
+
+"And that’s how OrgPulse helps track and analyze GitHub organizations easily!"
+
